@@ -7,7 +7,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
-color desert
+" color desert
 
 " map jj to <Esc>
 inoremap jj <Esc>
