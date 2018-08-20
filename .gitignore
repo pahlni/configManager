@@ -1,0 +1,15 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[user]
+	email = nicholas.pahl@dornerworks.com
+	name = Nicholas Pahl
+[color]
+	ui = auto
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
+[review "http://gerritcodereview:8080/"]
+	username = nicholaspahl
+[merge]
+	tool = vimdiff
+[core]
+	excludesfile = /home/nick/.gitignore
