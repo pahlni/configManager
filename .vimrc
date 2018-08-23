@@ -23,7 +23,7 @@ set hidden
 
 " Highlight trailing whitespace, spaces before tabs, and tabs in green.
 highlight ExtraWhiteSpace ctermbg=darkgreen guibg=lightgreen
-match ExtraWhitespace /\s\+$\| \+\ze\t \t/
+match ExtraWhitespace /\s\+$\| \+\ze\t\|\t/
 
 " last-position-jump
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
