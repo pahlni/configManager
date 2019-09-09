@@ -18,3 +18,7 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 git config --global merge.tool vimdiff
 git config --global core.editor vim
 git config --global core.excludesfile ~/.gitignore
+
+# Add to bashrc
+# do this for diff-so-fancy
+# echo "line" > ~/.bashrc

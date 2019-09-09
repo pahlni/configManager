@@ -1,7 +1,7 @@
 set number
 set relativenumber
 
-let &colorcolumn=join(range(81,999),",")
+let &colorcolumn=join(range(81,82),",")
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 " Set the width of the tab to 4 wide
@@ -10,10 +10,23 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
+" Search settings
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+set scrolloff=5
+
+set noswapfile
+
 " color desert
 
 " map jj to <Esc>
 inoremap jj <Esc>
+
+" Disable Ex mode
+map Q <Nop>
 
 " Always use spaces instead of tab characters
 set expandtab
@@ -32,7 +45,7 @@ autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "norm
 call plug#begin('~/.vim/plugged')
 
 " syntax checking
-Plug 'scrooloose/syntastic'
+"Plug 'scrooloose/syntastic'
 
 " git wrapper
 Plug 'tpope/vim-fugitive'
@@ -80,9 +93,9 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " syntastic settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
